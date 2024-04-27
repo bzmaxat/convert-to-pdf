@@ -55,6 +55,9 @@ def input_file():
         docx2pdf(file_path, save_path)
     elif file_extension == '.xlsx':
         xlsx2pdf(file_path, save_path)
+    else:
+        print('This file type is not supported')
+        logging.warning('This file type is not supported')
 
 
 def main():
